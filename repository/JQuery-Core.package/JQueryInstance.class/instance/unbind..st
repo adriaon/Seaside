@@ -5,4 +5,4 @@ unbind: aString
 		greaseDeprecatedApi: 'JQueryInstance>>#unbind:'
 		details: 'Deprecated in jQuery 3. Prefer the #off... API.'.
 	
-	self call: 'unbind' with: aString
+	self off: aString
