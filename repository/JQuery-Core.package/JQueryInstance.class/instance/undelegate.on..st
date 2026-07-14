@@ -5,4 +5,4 @@ undelegate: aSelectorString on: anEventString
 		greaseDeprecatedApi: 'JQueryInstance>>#undelegate:on:'
 		details: 'Deprecated in jQuery 3. Prefer the #off... API.'.
 	
-	self call: 'undelegate' with: aSelectorString with: anEventString
+	self off: anEventString selector: aSelectorString

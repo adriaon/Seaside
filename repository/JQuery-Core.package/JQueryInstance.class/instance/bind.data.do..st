@@ -5,4 +5,4 @@ bind: aString data: aDataObject  do: anObject
 		greaseDeprecatedApi: 'JQueryInstance>>#bind:data:do:'
 		details: 'Deprecated in jQuery 3. Prefer the #on... API.'.
 	
-	self call: 'bind' with: aString with: aDataObject with: anObject asFunction
+	self call: 'on' withArguments: (Array with: aString with: aDataObject with: anObject asFunction)

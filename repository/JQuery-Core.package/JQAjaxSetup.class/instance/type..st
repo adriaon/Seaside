@@ -6,4 +6,4 @@ type: aString
 		greaseDeprecatedApi: 'JQAjaxSetup>>#type:'
 		details: 'Deprecated in jQuery 3. Prefer #method:.'.
 	
-	self optionAt: 'type' put: aString asUppercase
+	self optionAt: 'method' put: aString asUppercase
