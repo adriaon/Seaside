@@ -10,8 +10,47 @@ testEventsDom
 		assert: ((self jQuery: 'a') onClick: self mock)
 		equals: self function , '("a").on("click",function(){mock})'.
 	self
+		assert: ((self jQuery: 'a') onCompositionEnd: self mock)
+		equals: self function , '("a").on("compositionend",function(){mock})'.
+	self
+		assert: ((self jQuery: 'a') onCompositionStart: self mock)
+		equals: self function , '("a").on("compositionstart",function(){mock})'.
+	self
+		assert: ((self jQuery: 'a') onCompositionUpdate: self mock)
+		equals: self function , '("a").on("compositionupdate",function(){mock})'.
+	self
+		assert: ((self jQuery: 'a') onContextMenu: self mock)
+		equals: self function , '("a").on("contextmenu",function(){mock})'.
+	self
+		assert: ((self jQuery: 'a') onCopy: self mock)
+		equals: self function , '("a").on("copy",function(){mock})'.
+	self
+		assert: ((self jQuery: 'a') onCut: self mock)
+		equals: self function , '("a").on("cut",function(){mock})'.
+	self
 		assert: ((self jQuery: 'a') onDoubleClick: self mock)
 		equals: self function , '("a").on("dblclick",function(){mock})'.
+	self
+		assert: ((self jQuery: 'a') onDrag: self mock)
+		equals: self function , '("a").on("drag",function(){mock})'.
+	self
+		assert: ((self jQuery: 'a') onDragEnd: self mock)
+		equals: self function , '("a").on("dragend",function(){mock})'.
+	self
+		assert: ((self jQuery: 'a') onDragEnter: self mock)
+		equals: self function , '("a").on("dragenter",function(){mock})'.
+	self
+		assert: ((self jQuery: 'a') onDragLeave: self mock)
+		equals: self function , '("a").on("dragleave",function(){mock})'.
+	self
+		assert: ((self jQuery: 'a') onDragOver: self mock)
+		equals: self function , '("a").on("dragover",function(){mock})'.
+	self
+		assert: ((self jQuery: 'a') onDragStart: self mock)
+		equals: self function , '("a").on("dragstart",function(){mock})'.
+	self
+		assert: ((self jQuery: 'a') onDrop: self mock)
+		equals: self function , '("a").on("drop",function(){mock})'.
 	self
 		assert: ((self jQuery: 'a') onError: self mock)
 		equals: self function , '("a").on("error",function(){mock})'.
@@ -61,6 +100,33 @@ testEventsDom
 		assert: ((self jQuery: 'a') onMouseUp: self mock)
 		equals: self function , '("a").on("mouseup",function(){mock})'.
 	self
+		assert: ((self jQuery: 'a') onPaste: self mock)
+		equals: self function , '("a").on("paste",function(){mock})'.
+	self
+		assert: ((self jQuery: 'a') onPointerCancel: self mock)
+		equals: self function , '("a").on("pointercancel",function(){mock})'.
+	self
+		assert: ((self jQuery: 'a') onPointerDown: self mock)
+		equals: self function , '("a").on("pointerdown",function(){mock})'.
+	self
+		assert: ((self jQuery: 'a') onPointerEnter: self mock)
+		equals: self function , '("a").on("pointerenter",function(){mock})'.
+	self
+		assert: ((self jQuery: 'a') onPointerLeave: self mock)
+		equals: self function , '("a").on("pointerleave",function(){mock})'.
+	self
+		assert: ((self jQuery: 'a') onPointerMove: self mock)
+		equals: self function , '("a").on("pointermove",function(){mock})'.
+	self
+		assert: ((self jQuery: 'a') onPointerOut: self mock)
+		equals: self function , '("a").on("pointerout",function(){mock})'.
+	self
+		assert: ((self jQuery: 'a') onPointerOver: self mock)
+		equals: self function , '("a").on("pointerover",function(){mock})'.
+	self
+		assert: ((self jQuery: 'a') onPointerUp: self mock)
+		equals: self function , '("a").on("pointerup",function(){mock})'.
+	self
 		assert: ((self jQuery: 'a') onResize: self mock)
 		equals: self function , '("a").on("resize",function(){mock})'.
 	self
@@ -74,4 +140,7 @@ testEventsDom
 		equals: self function , '("a").on("submit",function(){mock})'.
 	self
 		assert: ((self jQuery: 'a') onUnload: self mock)
-		equals: self function , '("a").on("unload",function(){mock})'
+		equals: self function , '("a").on("unload",function(){mock})'.
+	self
+		assert: ((self jQuery: 'a') onWheel: self mock)
+		equals: self function , '("a").on("wheel",function(){mock})'
