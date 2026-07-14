@@ -1,5 +1,5 @@
 tests-events
-testEventsDomComposition
+testEventsComposition
 	self
 		assert: ((self jQuery: 'a') onCompositionEnd: self mock)
 		equals: self function , '("a").on("compositionend",function(){mock})'.
