@@ -1,5 +1,5 @@
 tests-events
-testEventsDomDragAndDrop
+testEventsDragAndDrop
 	self
 		assert: ((self jQuery: 'a') onDrag: self mock)
 		equals: self function , '("a").on("drag",function(){mock})'.

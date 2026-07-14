@@ -1,5 +1,5 @@
 tests-events
-testEventsDomClipboardAndContext
+testEventsClipboardAndContext
 	self
 		assert: ((self jQuery: 'a') onContextMenu: self mock)
 		equals: self function , '("a").on("contextmenu",function(){mock})'.
