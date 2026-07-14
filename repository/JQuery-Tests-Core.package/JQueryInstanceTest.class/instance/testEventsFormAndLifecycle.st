@@ -1,5 +1,5 @@
 tests-events
-testEventsDomFormAndLifecycle
+testEventsFormAndLifecycle
 	self
 		assert: ((self jQuery: 'a') onBlur: self mock)
 		equals: self function , '("a").on("blur",function(){mock})'.

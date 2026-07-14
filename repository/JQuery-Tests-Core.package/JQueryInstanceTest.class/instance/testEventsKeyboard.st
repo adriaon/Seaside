@@ -1,5 +1,5 @@
 tests-events
-testEventsDomKeyboard
+testEventsKeyboard
 	self
 		assert: ((self jQuery: 'a') onKeyDown: self mock)
 		equals: self function , '("a").on("keydown",function(){mock})'.

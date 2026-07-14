@@ -1,5 +1,5 @@
 tests-events
-testEventsDomPointerAndWheel
+testEventsPointerAndWheel
 	self
 		assert: ((self jQuery: 'a') onPointerCancel: self mock)
 		equals: self function , '("a").on("pointercancel",function(){mock})'.

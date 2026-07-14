@@ -1,5 +1,5 @@
 tests-events
-testEventsDomMouse
+testEventsMouse
 	self
 		assert: ((self jQuery: 'a') onClick: self mock)
 		equals: self function , '("a").on("click",function(){mock})'.
