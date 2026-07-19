@@ -5,4 +5,4 @@ delegate: aSelectorString on: anEventString data: aDataObject do: aHandlerObject
 		greaseDeprecatedApi: 'JQueryInstance>>#delegate:on:data:do:'
 		details: 'Deprecated in jQuery 3. Prefer the #on... API.'.
 
-	self call: 'on' withArguments: (Array with: anEventString with: aSelectorString with: aDataObject with: aHandlerObject asFunction)
+	self on: anEventString selector: aSelectorString data: aDataObject do: aHandlerObject

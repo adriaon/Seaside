@@ -5,4 +5,4 @@ undelegate
 		greaseDeprecatedApi: 'JQueryInstance>>#undelegate'
 		details: 'Deprecated in jQuery 3. Prefer the #off... API.'.
 	
-	self call: 'off'
+	self off
