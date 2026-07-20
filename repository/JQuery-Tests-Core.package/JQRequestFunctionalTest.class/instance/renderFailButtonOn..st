@@ -5,7 +5,6 @@ renderFailButtonOn: html
 		onClick: ((html jQuery ajax)
 			serializeForm;
 			dataType: 'json';
-			global: false;
 			done: ((html jQuery: #logger)
 				append: ' | done (unexpected)');
 			fail: ((html jQuery: #logger)
