@@ -6,7 +6,6 @@ renderFailButtonOn: html
 			serializeForm;
 			script: [ :s | self loggerOn: s ];
 			dataType: 'json';
-			global: false;
 			done: ((html jQuery: #logger)
 				append: ' | done (unexpected)');
 			fail: ((html jQuery: #logger)
