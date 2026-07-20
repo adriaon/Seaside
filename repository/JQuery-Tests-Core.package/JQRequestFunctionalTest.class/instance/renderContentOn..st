@@ -9,4 +9,5 @@ renderContentOn: html
 		html paragraph: [
 			self renderButton: 'Get' ajax: html jQuery get on: html.
 			self renderButton: 'Script' ajax: html jQuery getScript on: html.
-			self renderButton: 'Post' ajax: html jQuery post on: html ] ]
+			self renderButton: 'Post' ajax: html jQuery post on: html.
+			self renderFailButtonOn: html ] ]
