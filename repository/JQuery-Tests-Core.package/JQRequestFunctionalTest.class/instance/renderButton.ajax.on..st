@@ -2,9 +2,8 @@ rendering
 renderButton: aString ajax: anAjax on: html
 	html button
 		bePush;
-		onClick: (anAjax
+		onClick: (((html jQuery: #logger) contents remove), anAjax
 			serializeForm;
-			beforeSend: ((html jQuery: #logger) contents remove);
 			onSuccess: ((html jQuery: #logger)
 				append: 'Request Success');
 			done: ((html jQuery: #logger)
