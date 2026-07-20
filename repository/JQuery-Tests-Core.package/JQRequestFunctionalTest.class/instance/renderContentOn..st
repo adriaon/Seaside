@@ -3,6 +3,9 @@ renderContentOn: html
 	html form: [ 
 		self renderText: 'Field 1' on: html.
 		self renderText: 'Field 2' on: html.
+		html paragraph
+			class: 'hint';
+			with: 'Deferred callback demo: Get/Script/Post exercise success-path deferred callbacks ("done" + "always"); Failing Request exercises failure-path callbacks ("fail" + "always").'.
 		html div 
 			id: 'logger';
 			class: 'code'.
