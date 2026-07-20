@@ -15,7 +15,7 @@ renderFailButtonOn: html
 				done: ((html jQuery: #logger)
 					append: ' | done (unexpected)');
 				fail: ((html jQuery: #logger)
-					append: ' | fail');
+					append: 'Request Failed | fail');
 				always: ((html jQuery: #logger)
 					append: ' | always')) ]);
 		with: 'Failing Request'
