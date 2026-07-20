@@ -2,8 +2,9 @@ rendering
 renderFailButtonOn: html
 	html button
 		bePush;
-		onClick: ((html jQuery ajax)
-			url: '/javascript/jquery/ajaxrequests';
+		onClick: ((html jQuery get)
+			serializeForm;
+			script: [ :s | self loggerOn: s ];
 			dataType: 'json';
 			global: false;
 			done: ((html jQuery: #logger)
