@@ -4,7 +4,6 @@ renderFailButtonOn: html
 		bePush;
 		onClick: ((html jQuery ajax)
 			serializeForm;
-			script: [ :s | self loggerOn: s ];
 			dataType: 'json';
 			global: false;
 			done: ((html jQuery: #logger)
