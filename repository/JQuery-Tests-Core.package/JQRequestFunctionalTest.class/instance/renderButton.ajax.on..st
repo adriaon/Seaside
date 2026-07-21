@@ -3,7 +3,7 @@ renderButton: aString ajax: anAjax on: html
 	html button
 		bePush;
 		onClick: (html jQuery script: [ :s |
-			s << ((html jQuery: #logger) contents remove).
+			self clearLoggerOn: s.
 			s << (anAjax
 				serializeForm;
 				onSuccess: ((html jQuery: #logger)

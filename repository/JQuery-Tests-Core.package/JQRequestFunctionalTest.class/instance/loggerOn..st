@@ -3,4 +3,4 @@ loggerOn: aScript
 	aScript << (logger
 		inject: (aScript jQuery: #logger)
 		into: [ :result :each | result append: [ :html | html text: each; break ] ]).
-	logger := OrderedCollection new
+	self resetLogger
