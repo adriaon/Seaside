@@ -1,4 +1,4 @@
-﻿uploaded
+uploaded
 jQueryJs
 	<ignoreForCoverage>
 	^ '/*!
