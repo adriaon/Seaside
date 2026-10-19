@@ -2,5 +2,4 @@
 
 Compatibility WAFileLibrary wrapper.
 
-Google Hosted Libraries does not currently host jQuery 4,
-so updateRoot: falls back to the jQuery CDN URL.
+Google Hosted Libraries does not host jQuery 4 (yet). Therefor, jQuery 3.7.1 is still being used.
